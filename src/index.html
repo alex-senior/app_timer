@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <section class="banner">
+      <h2>2025</h2>
+    </section>
+    <section class="content">
+      <h2>2024</h2>
+    </section>
+    <script>
+      let pos = document.documentElement;
+      pos.addEventListener("mousemove", e => {
+        pos.style.setProperty('--x', e.clientX+'px');
+        pos.style.setProperty('--y', e.clientY+'px');
+      })
+    </script>
+  </body>
+</html>
